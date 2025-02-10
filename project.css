@@ -29,15 +29,15 @@ h1 {
 }
 
 .home {
-  color: black;
-  background-image: url(images/archeryGirl.PNG);
-  /* background-color: #a79f9f; */
+  /* color: black; */
+  /* background-image: url(images/archeryGirl.PNG); */
+  background-color: #272030;
   background-size: cover;
   height: 100vh;
 }
 
 .box {
-  color: #272030;
+  /* color: #272030; */
   backdrop-filter: blur(5px);
   display: flex;
   justify-content: space-between;
@@ -77,6 +77,7 @@ li {
   font-size: 13px;
   text-align: center;
   transition: 1s;
+  color: #e3ebf2;
 }
 
 .list {
@@ -111,7 +112,7 @@ p {
 li:hover {
   cursor: pointer;
   opacity: 0.8;
-  border-bottom: 1px solid #272030;
+  border-bottom: 1px solid #e3ebf2;
 }
 
 .home_btn:hover {
@@ -128,6 +129,7 @@ li:hover {
   font-style: normal;
   cursor: pointer;
   transition: 1s;
+  color: #e3ebf2;
 }
 .im {
   width: 50px;
@@ -182,7 +184,7 @@ img {
   font-size: 15vh;
   animation: appear 1s linear;
   margin-bottom: 10px;
-  color: #d9dde0;
+  color: #e3ebf2;
 }
 
 .content_baby {
@@ -195,15 +197,16 @@ img {
   margin: 10px auto 20px;
   text-align: center;
   font-style: normal;
+  color: #e3ebf2;
 }
 
 .logo_page {
   display: flex;
   justify-content: space-around;
   padding: 70px 10px;
-  background-color: #d9dde0;
+  background-color: #e3ebf2;
 
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .logo_page div {
@@ -250,9 +253,9 @@ h2 {
 }
 
 .card_page_baby {
-  animation: scroll 3s linear;
+  /* animation: scroll 3s linear;
   animation-timeline: view();
-  animation-range: entry 50% cover 50%;
+  animation-range: entry 50% cover 50%; */
   padding: 10px 30px;
   display: flex;
   justify-content: space-around;
@@ -263,7 +266,7 @@ h2 {
   backdrop-filter: blur(30px);
   width: 25%;
   height: 300px;
-  /* background-color: #e3ebf2; */
+  /* background-color: ##e3ebf2; */
   /* border: none; */
   border-radius: 3px;
   box-shadow: 5px 5px 20px #272030;
