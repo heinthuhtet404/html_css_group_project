@@ -1,0 +1,401 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* #home{
+  scroll-behavior: smooth;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 2000px;
+  color: black;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: "Permanent Marker", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 20vh;
+  margin-left: 20px;
+}
+
+.home {
+  color: #e3ebf2;
+
+  /* background-color: #272030; */
+  background-image: url(archeryGirl.PNG);
+  
+  background-size: cover;
+  height: 100vh;
+}
+
+.box {
+  color: #272030;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #272030;
+  margin: 0px 0px 10px 0px;
+  height: 35px;
+  position: sticky;
+  top: 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+  padding: 0px 20px;
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+  text-align: center;
+  transition: 1s;
+}
+
+.list {
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  font-family: "Cutive Mono", serif;
+  font-weight: 600;
+  font-style: normal;
+  height: 30px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.home_btn {
+  border: none;
+  /* border: 1px solid black; */
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: #272030;
+  background-color: #e3ebf2;
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 300;
+  font-size: 12px;
+  font-style: normal;
+  transition: 0.3s;
+}
+
+li:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  border-bottom: 1px solid #272030;
+}
+
+.home_btn:hover {
+  border-radius: 20px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logo {
+  font-family: "Jura", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.logo:hover {
+  transform: translateX(10px);
+}
+
+.page {
+  height: 100vh;
+  color: black;
+  background-image: url(hapman.PNG);
+  background-size: cover;
+}
+
+.news {
+  height: 100vh;
+  background-image: url(blackgirl.PNG);
+  background-size: cover;
+}
+
+.blog {
+  height: 100vh;
+  background-image: url(japanstreet.jpg);
+  background-size: cover;
+}
+
+.homepage {
+  /* width: 100%; */
+  display: flex;
+  padding: 10px 20px;
+}
+
+.content {
+  text-align: center;
+}
+
+img {
+  color: #e3ebf2;
+}
+
+.content_header {
+  font-family: "Rubik Mono One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15vh;
+  margin-bottom: 10px;
+}
+
+.content_baby {
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  width: 500px;
+  margin: 10px auto 20px;
+  text-align: center;
+  font-style: normal;
+}
+
+.logo_page {
+  display: flex;
+  justify-content: space-around;
+  padding: 70px 10px;
+  background-color: #d9dde0;
+  border-bottom: 1px solid #272030;
+  border-top: 1px solid #272030;
+}
+
+.logo_page div {
+  width: 100px;
+}
+
+.logo_page div p {
+  margin: 10px 0px;
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  text-align: center;
+  color: #272030;
+}
+
+.logo_page div img {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+
+  border-radius: 15px;
+  box-shadow: 5px 5px 3px rgb(138, 136, 136);
+  transition: 0.3s;
+}
+
+.logo_page div img:hover {
+  transform: translateY(-10px);
+}
+
+h2 {
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 2000;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card_page {
+  padding: 10px 10px;
+
+  color: #272030;
+  background-color: #e3ebf2;
+}
+
+.card_page_baby {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0px;
+}
+
+.baby {
+  background-size: cover;
+  backdrop-filter: blur(30px);
+  width: 25%;
+  height: 300px;
+  /* background-color: #e3ebf2; */
+  /* border: none; */
+  border-radius: 3px;
+  box-shadow: 5px 5px 20px #272030;
+  border: 1px solid #272030;
+  
+  color: #e3ebf2;
+  transition: 0.3s;
+  /* box-shadow: 5px 5px 5px #e3ebf2; */
+}
+
+
+.card_btn {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  border-radius: 0 0 3px 3px;
+  padding: 15px 0;
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 300;
+  font-size: 12px;
+  font-style: normal;
+  transition: 0.3s;
+  background-color: #e3ebf2;
+}
+
+.card_btn:hover {
+  /* opacity: 0.9; */
+  background-color: #272030;
+  color: #e3ebf2;
+  border: 1px solid #e3ebf2;
+  transform: translateY(-6px);
+  /* width: 90%; */
+  /* width: 200px; */
+  /* margin-left: 20px; */
+  border-radius: 5px;
+}
+
+.baby_pad {
+  padding: 10px 15px;
+}
+
+.baby_card_content {
+  font-family: "Permanent Marker", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vh;
+}
+
+.hero_page {
+  height: 100vh;
+  background-color: #e3ebf2;
+  /* width: 100%; */
+  padding: 20px 20px;
+  border: none;
+  /* box-shadow: 5px 5px 5px #272030; */
+  /* width: 100%; */
+  /* border: #272030 1px solid; */
+  /* height: 50vh; */
+}
+
+.hero {
+  display: flex;
+  width: 1000px;
+  border-radius: 20px;
+  padding: 50px 40px;
+  margin: 30px auto;
+  box-shadow: 5px 5px 4px #272030;
+  
+  border: 1px solid #272030;
+}
+
+.hero_h2{
+  text-align: left;
+  font-family: "Rubik Mono One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5vh;
+}
+
+.hero_para{
+  /* width: 70%; */
+  font-family: "Inconsolata", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    font-size: 20px;
+}
+
+.hero_btn{
+  margin: 30px 0px;
+  border: 1px solid rgb(109, 108, 108);
+  padding: 10px 40px;
+  /* background-color: #272030; */
+  color: #272030;
+  border-radius: 7px;
+  font-family: "Jura", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero_btn:hover{
+  transform: translateY(-3px);
+}
+
+.one{
+  background-color: rgb(154, 183, 154);
+}
+
+.two{
+  background-color: rgb(189, 142, 142);
+}
+
+.three{
+  background-color: rgb(177, 177, 138);
+}
+
+.footer_page{
+  background-color: #272030;
+  color: #e3ebf2;
+
+}
+
+.footer_vision h1{
+  padding: 30px 0;
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  height: 50vh;
+  text-align: center;
+}
+
+.think_photo img{
+  transition: 0.3s;
+}
+
+.think_photo img:hover{
+  cursor: pointer;
+  transform: translateX(-3px);
+}
