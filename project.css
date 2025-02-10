@@ -1,11 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
-/* #home{
-  scroll-behavior: smooth;
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +6,6 @@ html {
 body {
   height: 2000px;
   color: black;
-
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -26,13 +17,21 @@ h1 {
   font-size: 20vh;
   margin-left: 20px;
 }
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
 
 .home {
-  color: #e3ebf2;
-
-  /* background-color: #272030; */
-  background-image: url(archeryGirl.PNG);
-  
+  color: black;
+  background-image: url(images/archeryGirl.PNG);
+  /* background-color: #a79f9f; */
   background-size: cover;
   height: 100vh;
 }
@@ -101,7 +100,7 @@ p {
   padding: 5px 20px;
   border-radius: 10px;
   color: #272030;
-  background-color: #e3ebf2;
+
   font-family: "Noto Sans Myanmar", serif;
   font-weight: 300;
   font-size: 12px;
@@ -130,6 +129,14 @@ li:hover {
   cursor: pointer;
   transition: 1s;
 }
+.im {
+  width: 50px;
+  height: 30px;
+  float: left;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+}
 
 .logo:hover {
   transform: translateX(10px);
@@ -138,19 +145,19 @@ li:hover {
 .page {
   height: 100vh;
   color: black;
-  background-image: url(hapman.PNG);
+  background-image: url(images/hapman.PNG);
   background-size: cover;
 }
 
 .news {
   height: 100vh;
-  background-image: url(blackgirl.PNG);
+  background-image: url(images/blackgirl.PNG);
   background-size: cover;
 }
 
 .blog {
   height: 100vh;
-  background-image: url(japanstreet.jpg);
+  background-image: url(images/japanstreet.jpg);
   background-size: cover;
 }
 
@@ -173,7 +180,9 @@ img {
   font-weight: 400;
   font-style: normal;
   font-size: 15vh;
+  animation: appear 1s linear;
   margin-bottom: 10px;
+  color: #d9dde0;
 }
 
 .content_baby {
@@ -182,6 +191,7 @@ img {
   font-style: normal;
   font-size: 18px;
   width: 500px;
+  animation: appear 1s linear;
   margin: 10px auto 20px;
   text-align: center;
   font-style: normal;
@@ -192,8 +202,8 @@ img {
   justify-content: space-around;
   padding: 70px 10px;
   background-color: #d9dde0;
-  border-bottom: 1px solid #272030;
-  border-top: 1px solid #272030;
+
+  border-radius: 5px;
 }
 
 .logo_page div {
@@ -240,12 +250,14 @@ h2 {
 }
 
 .card_page_baby {
+  animation: scroll 3s linear;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
   padding: 10px 30px;
   display: flex;
   justify-content: space-around;
   margin: 30px 0px;
 }
-
 .baby {
   background-size: cover;
   backdrop-filter: blur(30px);
@@ -256,12 +268,11 @@ h2 {
   border-radius: 3px;
   box-shadow: 5px 5px 20px #272030;
   border: 1px solid #272030;
-  
+
   color: #e3ebf2;
   transition: 0.3s;
   /* box-shadow: 5px 5px 5px #e3ebf2; */
 }
-
 
 .card_btn {
   cursor: pointer;
@@ -321,11 +332,11 @@ h2 {
   padding: 50px 40px;
   margin: 30px auto;
   box-shadow: 5px 5px 4px #272030;
-  
+
   border: 1px solid #272030;
 }
 
-.hero_h2{
+.hero_h2 {
   text-align: left;
   font-family: "Rubik Mono One", serif;
   font-weight: 400;
@@ -333,18 +344,17 @@ h2 {
   font-size: 5vh;
 }
 
-.hero_para{
+.hero_para {
   /* width: 70%; */
   font-family: "Inconsolata", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-    font-size: 20px;
+  font-variation-settings: "width" 100;
+  font-size: 20px;
 }
 
-.hero_btn{
+.hero_btn {
   margin: 30px 0px;
   border: 1px solid rgb(109, 108, 108);
   padding: 10px 40px;
@@ -359,29 +369,28 @@ h2 {
   transition: 0.3s;
 }
 
-.hero_btn:hover{
+.hero_btn:hover {
   transform: translateY(-3px);
 }
 
-.one{
+.one {
   background-color: rgb(154, 183, 154);
 }
 
-.two{
+.two {
   background-color: rgb(189, 142, 142);
 }
 
-.three{
+.three {
   background-color: rgb(177, 177, 138);
 }
 
-.footer_page{
+.footer_page {
   background-color: #272030;
   color: #e3ebf2;
-
 }
 
-.footer_vision h1{
+.footer_vision h1 {
   padding: 30px 0;
   font-family: "Orbitron", serif;
   font-optical-sizing: auto;
@@ -391,11 +400,11 @@ h2 {
   text-align: center;
 }
 
-.think_photo img{
+.think_photo img {
   transition: 0.3s;
 }
 
-.think_photo img:hover{
+.think_photo img:hover {
   cursor: pointer;
   transform: translateX(-3px);
 }

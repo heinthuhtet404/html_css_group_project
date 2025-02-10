@@ -1,0 +1,158 @@
+.box {
+  color: #272030;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #272030;
+  margin: 0px 0px 10px 0px;
+  height: 35px;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0px 20px;
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+  text-align: center;
+  transition: 1s;
+}
+
+.list {
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  font-family: "Cutive Mono", serif;
+  font-weight: 600;
+  font-style: normal;
+  height: 30px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.home_btn {
+  border: none;
+  /* border: 1px solid black; */
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: #272030;
+
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 300;
+  font-size: 12px;
+  font-style: normal;
+  transition: 0.3s;
+}
+
+li:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  border-bottom: 1px solid #272030;
+}
+
+.home_btn:hover {
+  border-radius: 20px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logo {
+  font-family: "Jura", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.logo:hover {
+  transform: translateX(10px);
+}
+
+.text {
+  font-optical-sizing: auto;
+
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.img {
+  margin-top: 20px;
+  width: 450px;
+
+  height: 300px;
+}
+
+.im {
+  width: 50px;
+  height: 30px;
+  float: left;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.img1 {
+  margin-top: 20px;
+  width: 750px;
+
+  height: 200px;
+}
+
+.first {
+  display: flex;
+  margin: 20px;
+}
+
+.right {
+  margin-left: 100px;
+}
+
+.card {
+  height: 100px;
+  width: 250px;
+  text-align: left;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.img2 {
+  width: 250px;
+  height: 100px;
+}
+
+.card:hover {
+  height: 300px;
+  transition: 1s;
+  transform: scale(1.1);
+  box-shadow: 10px 10px 20px yellow;
+}
+
+.card p {
+  font-size: 15px;
+}
+
+.fe {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+p {
+  text-align: justify;
+}

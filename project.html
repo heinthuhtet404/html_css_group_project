@@ -34,6 +34,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@100;200;300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap"
       rel="stylesheet"
@@ -42,10 +43,15 @@
       href="https://fonts.googleapis.com/css2?family=Faster+One&family=Inconsolata:wght@200..900&family=JetBrains+Mono&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Russo+One&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
     <div class="home">
       <div class="box">
@@ -53,7 +59,8 @@
           <p>Sports</p>
         </div>
         <div class="list">
-          <li>အသင်းလိုက်</li>
+          <a href="teams.html"><li>အသင်းလိုက်</li></a>
+
           <li>တစ်ဦးချင်း</li>
           <li>သတင်းများ</li>
         </div>
@@ -70,120 +77,126 @@
           </p>
           <button class="home_btn">ပိုမိုလေ့လာရန်</button>
         </div>
-        <!-- <div class="photo">
-          <img src="chin.webp" alt="chin" style="width: 100%; height: 90vh;">
-        </div> -->
+      </div>
+
+      <div class="logo_page">
+        <div class="block" data-aos="fade-in">
+          <img src="images/chinlogo.jpg" />
+          <p>ပိုက်ကျော်ခြင်း</p>
+        </div>
+        <div class="block" data-aos="fade-in">
+          <img src="images/bala.jpg" />
+          <p>စစ်တုရင်</p>
+        </div>
+        <div class="block" data-aos="fade-in">
+          <img src="images/pintekyawchin.jpg" alt="" />
+          <p>မြှားပစ်</p>
+        </div>
+        <div class="block" data-aos="fade-in">
+          <img src="images/latwae.jpg" alt="" />
+          <p>လက်ဝှေ့</p>
+        </div>
+        <div class="block" data-aos="fade-in">
+          <img src="images/tennis.jpg" alt="" />
+          <p>နဘမ်း</p>
+        </div>
+        <div class="block" data-aos="fade-in">
+          <img src="images/thunglogo.jpg" alt="" />
+          <p>မြန်မာသိုင်း</p>
+        </div>
+      </div>
+      *\
+      <div class="card_page" data-aos="fade-in">
+        <div class="card_page_header">
+          <h2>ပြိုင်ပွဲများ</h2>
+        </div>
+        <div class="card_page_baby">
+          <div class="baby" style="background-image: url(images/girl1.PNG)">
+            <div class="baby_pad">
+              <h3>Anna</h3>
+              <p>Linn</p>
+              <p class="baby_card_content">hello guys i am back</p>
+            </div>
+            <button class="card_btn">ပိုမိုလေ့လာရန်</button>
+          </div>
+          <div class="baby" style="background-image: url(images/girl2.PNG)">
+            <div class="baby_pad">
+              <h3>James</h3>
+              <p>Kinn</p>
+              <p class="baby_card_content">hello guys i am back</p>
+            </div>
+            <button class="card_btn">ပိုမိုလေ့လာရန်</button>
+          </div>
+          <div class="baby" style="background-image: url(images/girl3.PNG)">
+            <div class="baby_pad">
+              <h3>Min</h3>
+              <p>John</p>
+              <p class="baby_card_content">hello guys i am back</p>
+            </div>
+            <button class="card_btn">ပိုမိုလေ့လာရန်</button>
+          </div>
+        </div>
+        <div class="card_page_baby">
+          <div class="baby" style="background-image: url(images/girl4.PNG)">
+            <div class="baby_pad">
+              <h3>Rock</h3>
+              <p>You</p>
+              <p class="baby_card_content">hello guys i am back</p>
+            </div>
+            <button class="card_btn">ပိုမိုလေ့လာရန်</button>
+          </div>
+          <div class="baby" style="background-image: url(images/girl5.PNG)">
+            <div class="baby_pad">
+              <h3>Baby</h3>
+              <p>Miss</p>
+              <p class="baby_card_content">hello guys i am back</p>
+            </div>
+            <button class="card_btn">ပိုမိုလေ့လာရန်</button>
+          </div>
+          <div class="baby" style="background-image: url(images/girl6.PNG)">
+            <div class="baby_pad">
+              <h3>Frox</h3>
+              <p>Xx</p>
+              <p class="baby_card_content">hello guys i am back</p>
+            </div>
+            <button class="card_btn">ပိုမိုလေ့လာရန်</button>
+          </div>
+        </div>
+      </div>
+      <div class="hero_page" data-aos="fade-in">
+        <div class="hero">
+          <div class="hero_no">
+            <h2 class="hero_h2">Hello Guys</h2>
+            <p class="hero_para">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+              officiis, beatae assumenda recusandae reprehenderit sit
+              reiciendis, alias animi ut modi mollitia nobis quibusdam rerum aut
+              molestias sequi voluptate nam? Aperiam?
+            </p>
+            <div class="hero_btn_family">
+              <button class="hero_btn one">more explore</button>
+              <button class="hero_btn two">resources</button>
+              <button class="hero_btn three">next</button>
+            </div>
+          </div>
+          <div class="think_photo">
+            <img
+              src="images/think.png"
+              alt="think"
+              style="width: 300px; height: 100%"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="footer_page">
+        <div class="footer_vision">
+          <h1>Our Vision</h1>
+        </div>
       </div>
     </div>
-    <div class="logo_page">
-      <div>
-        <img src="chinlogo.jpg" alt="" />
-        <p>ပိုက်ကျော်ခြင်း</p>
-      </div>
-      <div>
-        <img src="bala.jpg" alt="" />
-        <p>စစ်တုရင်</p>
-      </div>
-      <div>
-        <img src="pintekyawchin.jpg" alt="" />
-        <p>မြှားပစ်</p>
-      </div>
-      <div>
-        <img src="latwae.jpg" alt="" />
-        <p>လက်ဝှေ့</p>
-      </div>
-      <div>
-        <img src="tennis.jpg" alt="" />
-        <p>နဘမ်း</p>
-      </div>
-      <div>
-        <img src="thunglogo.jpg" alt="" />
-        <p>မြန်မာသိုင်း</p>
-      </div>
-    </div>
-    <div class="card_page">
-      <div class="card_page_header">
-        <h2>ပြိုင်ပွဲများ</h2>
-      </div>
-      <div class="card_page_baby">
-        <div class="baby" style="background-image: url(girl1.PNG)">
-          <div class="baby_pad">
-            <h3>Anna</h3>
-            <p>Linn</p>
-            <p class="baby_card_content">hello guys i am back</p>
-          </div>
-          <button class="card_btn">ပိုမိုလေ့လာရန်</button>
-        </div>
-        <div class="baby" style="background-image: url(girl2.PNG)">
-          <div class="baby_pad">
-            <h3>James</h3>
-            <p>Kinn</p>
-            <p class="baby_card_content">hello guys i am back</p>
-          </div>
-          <button class="card_btn">ပိုမိုလေ့လာရန်</button>
-        </div>
-        <div class="baby" style="background-image: url(girl3.PNG)">
-          <div class="baby_pad">
-            <h3>Min</h3>
-            <p>John</p>
-            <p class="baby_card_content">hello guys i am back</p>
-          </div>
-          <button class="card_btn">ပိုမိုလေ့လာရန်</button>
-        </div>
-      </div>
-      <div class="card_page_baby">
-        <div class="baby" style="background-image: url(girl4.PNG)">
-          <div class="baby_pad">
-            <h3>Rock</h3>
-            <p>You</p>
-            <p class="baby_card_content">hello guys i am back</p>
-          </div>
-          <button class="card_btn">ပိုမိုလေ့လာရန်</button>
-        </div>
-        <div class="baby" style="background-image: url(girl5.PNG)">
-          <div class="baby_pad">
-            <h3>Baby</h3>
-            <p>Miss</p>
-            <p class="baby_card_content">hello guys i am back</p>
-          </div>
-          <button class="card_btn">ပိုမိုလေ့လာရန်</button>
-        </div>
-        <div class="baby" style="background-image: url(girl6.PNG)">
-          <div class="baby_pad">
-            <h3>Frox</h3>
-            <p>Xx</p>
-            <p class="baby_card_content">hello guys i am back</p>
-          </div>
-          <button class="card_btn">ပိုမိုလေ့လာရန်</button>
-        </div>
-      </div>
-    </div>
-    <div class="hero_page">
-      <div class="hero">
-        <div class="hero_no">
-          <h2 class="hero_h2">Hello Guys</h2>
-          <p class="hero_para">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
-            officiis, beatae assumenda recusandae reprehenderit sit reiciendis,
-            alias animi ut modi mollitia nobis quibusdam rerum aut molestias
-            sequi voluptate nam? Aperiam?
-          </p>
-          <div class="hero_btn_family">
-            <button class="hero_btn one">more explore</button>
-            <button class="hero_btn two">resources</button>
-            <button class="hero_btn three">next</button>
-          </div>
-        </div>
-        <div class="think_photo">
-          <img src="think.png" alt="think" style="width: 300px; height: 100%;"/>
-        </div>
-      </div>
-    </div>
-    <div class="footer_page">
-      <div class="footer_vision">
-        <h1>Our Vision</h1>
-      </div>
-      <div></div>
-    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
