@@ -129,22 +129,27 @@ li:hover {
   font-style: normal;
   cursor: pointer;
   transition: 1s;
+}
+
+.logo a p{
   color: #e3ebf2;
 }
-.im {
+
+.logo:hover {
+  transform: translateX(10px);
+}
+/* .im {
   width: 50px;
   height: 30px;
   float: left;
   margin-top: 5px;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.logo:hover {
-  transform: translateX(10px);
-}
 
-.page {
+
+/* .page {
   height: 100vh;
   color: black;
   background-image: url(images/hapman.PNG);
@@ -161,7 +166,7 @@ li:hover {
   height: 100vh;
   background-image: url(images/japanstreet.jpg);
   background-size: cover;
-}
+} */
 
 .homepage {
   /* width: 100%; */
