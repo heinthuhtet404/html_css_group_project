@@ -98,10 +98,12 @@ li:hover {
 }
 
 .home_btn:hover {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   opacity: 0.8;
   cursor: pointer;
   transition: 0.3s;
+  background-color: #272030;
+  
 }
 
 .logo {
