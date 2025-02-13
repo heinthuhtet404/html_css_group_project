@@ -1,7 +1,7 @@
-ody{
+body{
     margin: 0;
     padding: 0;
-    background-color: #2f3542;
+    background-color: #e3ebf2;
     color: #fff;
     height: 100vh;
     display: flex;
@@ -22,7 +22,7 @@ ody{
 
 .animated-text span::before{
     content: "Youtuber";
-    color: #ff7f50;
+    color: #2f3542;
     animation: words 20s infinite;
 }
 
@@ -31,15 +31,15 @@ ody{
     position: absolute;
     width: calc(100% + 8px);
     height: 55px;
-    background-color:white;
-    border-left: 2px solid #ff7f50;
+    background-color: #e3ebf2;
+    border-left: 2px solid #2f3542;
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }
 
 @keyframes cursor {
     to{
-        border-left: 2px solid #ff7f5000;
+        border-left: 2px solid #e3ebf2;
     }
 }
 

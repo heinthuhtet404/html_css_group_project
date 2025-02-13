@@ -31,9 +31,10 @@ h1 {
 .home {
   /* color: black; */
   /* background-image: url(images/archeryGirl.PNG); */
-  background-color: #272030;
+  background-color: #e3ebf2;
   background-size: cover;
   height: 100vh;
+  color: #272030;
 }
 
 .box {
@@ -44,7 +45,7 @@ h1 {
   text-align: center;
   align-items: center;
   padding: 10px 20px;
-  border-bottom: 1px solid #e3ebf2;
+  border-bottom: 1px solid #272030;
   margin: 0px 0px 10px 0px;
   height: 35px;
   position: sticky;
@@ -77,7 +78,8 @@ li {
   font-size: 13px;
   text-align: center;
   transition: 1s;
-  color: #e3ebf2;
+  /* color: #e3ebf2; */
+  color: #272030;
 }
 
 .list {
@@ -100,19 +102,20 @@ p {
   /* border: 1px solid black; */
   padding: 5px 20px;
   border-radius: 10px;
-  color: #272030;
+  background-color: #272030;
 
   font-family: "Noto Sans Myanmar", serif;
   font-weight: 300;
   font-size: 12px;
   font-style: normal;
   transition: 0.3s;
+  color: #e3ebf2;
 }
 
 li:hover {
   cursor: pointer;
   opacity: 0.8;
-  border-bottom: 1px solid #e3ebf2;
+  border-bottom: 1px solid #272030;
 }
 
 .home_btn:hover {
@@ -120,9 +123,10 @@ li:hover {
   opacity: 0.8;
   cursor: pointer;
   transition: 0.3s;
-  background-color: #272030;
-  color: #e3ebf2;
-  border: 1px solid #e3ebf2;
+  background-color: #e3ebf2;
+  opacity: 0.7;
+  color: #272030;
+  border: 1px solid #272030;
 }
 
 .logo {
@@ -135,7 +139,8 @@ li:hover {
 }
 
 .logo a p{
-  color: #e3ebf2;
+  /* color: #e3ebf2; */
+  color: #272030;
 }
 
 .logo:hover {
@@ -192,7 +197,8 @@ img {
   font-size: 15vh;
   animation: appear 1s linear;
   margin-bottom: 10px;
-  color: #e3ebf2;
+  color: #272030;
+  /* color: #e3ebf2; */
 }
 
 .content_baby {
@@ -205,7 +211,8 @@ img {
   margin: 10px auto 20px;
   text-align: center;
   font-style: normal;
-  color: #e3ebf2;
+  /* color: #e3ebf2; */
+  color: #272030;
 }
 
 .logo_page {
