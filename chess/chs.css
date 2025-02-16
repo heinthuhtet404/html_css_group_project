@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+    /* background-color: #e9e6e6ce; */
+    background-color: #e3ebf2;
+}
+
+header {
+    background-image: url(chess2.jpg);
+    background-size: cover;
+    color: #635f5f;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ede8e6f3;
+    text-decoration: none;
+}
+
+
+.box{
+    /* background-color: #706c6c; */
+    display: flex;
+    margin: 20px 20px;
+    justify-content: space-around;
+}
+
+button {
+    background: #222;
+    color: #fff;
+    /* padding: 10px 20px; */
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: #fff;
+    /* position: relative; */
+    /* bottom: 0; */
+    /* width: 100%; */
+}
+
+#History {
+    width: 40%;
+    /* margin: 0px; */
+    padding: 20px 30px;
+    font-family: "Noto Sans Myanmar", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    height: 500px;
+    background-color: #272030;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #e3ebf2;
+}
+
+#about {
+    width: 40%;
+    /* margin: 10px; */
+    padding: 20px 30px;
+    font-family: "Noto Sans Myanmar", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    height: 500px;
+    background-color: #272030;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #e3ebf2;
+}
+
+#about img{
+    width: 200px;
+    height: 200px;
+}
+
+#events {
+    width: 40%;
+    /* margin: 10px; */
+    padding: 20px 30px;
+    font-family: "Noto Sans Myanmar", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    height: 500px;
+    background-color: #272030;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #e3ebf2;
+
+}
+
+#news {
+    width: 40%;
+    margin: 10px;
+    padding: 0 30px;
+    font-family: "Noto Sans Myanmar", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+}
+
+.box2{
+    display: flex;
+    margin: 20px 20px;
+    justify-content: space-around;
+}
