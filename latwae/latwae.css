@@ -1,16 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* height: 2000px; */
+  background-color: #e3ebf2;
+}
+
+.home {
+  background-color: #e3ebf2;
+  background-size: cover;
+  height: 100vh;
+}
+
 .box {
-  color: #272030;
+  z-index: 2;
   backdrop-filter: blur(5px);
   display: flex;
   justify-content: space-between;
   text-align: center;
   align-items: center;
   padding: 10px 20px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #272030;
   margin: 0px 0px 10px 0px;
   height: 35px;
   position: sticky;
   top: 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+a:active {
+  text-decoration: none;
+  color: black;
 }
 
 li {
@@ -22,6 +55,7 @@ li {
   font-size: 13px;
   text-align: center;
   transition: 1s;
+  /* color: #e3ebf2; */
 }
 
 .list {
@@ -32,26 +66,20 @@ li {
   font-weight: 600;
   font-style: normal;
   height: 30px;
-  color: white;
-}
-
-p {
- font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px;
 }
 
 .home_btn {
   border: none;
-  /* border: 1px solid black; */
   padding: 5px 20px;
   border-radius: 10px;
-  color: #272030;
-
+  background-color: #272030;
+  align-items: center;
   font-family: "Noto Sans Myanmar", serif;
   font-weight: 300;
   font-size: 12px;
   font-style: normal;
   transition: 0.3s;
+  color: #e3ebf2;
 }
 
 li:hover {
@@ -61,10 +89,13 @@ li:hover {
 }
 
 .home_btn:hover {
-  border-radius: 20px;
   opacity: 0.8;
   cursor: pointer;
   transition: 0.3s;
+  background-color: #e3ebf2;
+  opacity: 0.7;
+  color: #272030;
+  border: 1px solid #272030;
 }
 
 .logo {
@@ -76,20 +107,26 @@ li:hover {
   transition: 1s;
 }
 
+.logo a p {
+  color: #272030;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .logo:hover {
   transform: translateX(10px);
 }
 
 .text {
   font-optical-sizing: auto;
-  font-family:  sans-serif;
-  font-weight: bold;
-  font-style: normal;
+  font-family: "Noto Sans Myanmar", sans-serif;
+  font-weight: 900;
   font-size: 40px;
+  font-style: normal;
   cursor: pointer;
-  animation: text-animation 10s ease-in-out  infinite;
-color: white;
- padding-top: 10px;
+  animation: text-animation 5s ease-in-out infinite;
+  color: #272030;
+  /* padding-top: 10px; */
 }
 
 .img {
@@ -114,131 +151,204 @@ color: white;
 
   height: 300px;
 }
-#read{
+#read {
   cursor: pointer;
 }
 
-.first p{
-  font-size:30px;
+.sec-header {
+  /* display: inline; */
+  /* display: inline-flex; */
+  background-color: #2d2735;
+  /* font-size: 30px; */
+  font-family: "Noto Sans Myanmar", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  font-style: normal;
   padding-bottom: 20px;
-  text-shadow: 0px 5px 15px  rgba(0,0,0,0.25);
+  text-shadow: 0px 5px 15px #272030;
+  width: 60%;
+  text-align: center;
+  /* align-items: center; */
+  margin: 0 auto;
+  color: #e3ebf2;
 }
 
+.basic {
+  /* padding-top: 40px; */
+  /* padding: 20px 0px; */
+  font-family: "Noto Sans Myanmar", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  font-style: normal;
+  /* border-top: 1px solid #272030; */
+  padding-top: 30px;
+  /* background-color: #272030; */
+  color: #272030;
+}
 
 .card {
-  height: 500px;
-  width: 250px;
-  text-align: left;
-  
+  padding: 20px 20px;
+  /* height: 400px; */
+  width: 200px;
+  /* text-align: left; */
+  transition: 0.5s;
   border-radius: 10px;
 }
 
+.head-content {
+  font-family: "Noto Sans Myanmar", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  font-style: normal;
+  color: #272030;
+  margin-bottom: 10px;
+}
+
 .img2 {
-  width: 250px;
+  width: 200px;
   height: 200px;
-  filter: drop-shadow(1px 1px 20px yellow);
+  filter: drop-shadow(1px 1px 20px #e3ebf2);
 }
 
 .card:hover {
- 
-  transition: 1s;
   transform: scale(1.1);
-  box-shadow: 0px 5px 15px #00FFFF;
+  box-shadow: 0px 5px 15px #272030;
 }
 
-.card p {
-  font-size: 15px;
+.head-baby {
+  font-family: "Noto Sans Myanmar", sans-serif;
+
+  font-size: 11px;
+  font-style: normal;
+  color: #272030;
 }
 
 .fe {
   display: flex;
-  gap: 100px;
-  justify-content: center;
-  margin-top: 100px;
- 
+  /* gap: 100px; */
+  justify-content: space-around;
+  margin-top: 70px;
 }
 
 p {
   text-align: justify;
   color: white;
 }
-.sec p{
+
+.sec {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.sec p {
+  font-family: "Noto Sans Myanmar", sans-serif;
+  font-weight: 900;
   font-size: 50px;
- text-align: center;
+  color: #272030;
+  text-align: center;
   justify-content: center;
 }
-.mya{
+/* .mya {
   font-size: 50px;
- text-align: center;
+  text-align: center;
   justify-content: center;
   background-size: 200%;
-  background: linear-gradient(90deg,#ff8a00,#e52e71,#00c6ff,#243b55);
-  background-clip:text;
-  animation: text-animation 5s ease-in-out  infinite;
+  background: linear-gradient(90deg, #ff8a00, #e52e71, #00c6ff, #243b55);
+  background-clip: text;
+  animation: text-animation 5s ease-in-out infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 .first {
   background-image: url(his.jpg);
-  border-image: fill 0 linear-gradient(#0001,#000);
+  border-image: fill 0 linear-gradient(#0001, #e3ebf2);
   background-repeat: repeat;
   background-size: 30%;
-  
+  height: 260px;
   text-align: left;
 }
 @keyframes text-animation {
-  0%{
-   background-position: 0% 50%;
-   opacity: 0.3;
+  0% {
+    background-position: 0% 50%;
+    opacity: 0.3;
   }
-  50%{
+  50% {
     background-position: 100% 50%;
     opacity: 1;
-   }
-   100%{
+  }
+  100% {
     background-position: 0% 50%;
-    
-   }
+  }
 }
-html{
-scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-.his{
+.his {
+  /* background-color: cadetblue; */
+  margin: 0px 20px;
   display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
 }
-.te p{
-  margin-left: 20px;
-  font-size: 20px;
+.te p {
+  text-align: justify;
+  width: 85%;
+  font-family: "Noto Sans Myanmar", sans-serif;
+  font-weight: 580;
+  font-size: 15px;
+  color: #272030;
 }
-.th{
+.th {
+  /* background-color: #656b49; */
+  margin: 0px 20px;
   display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
 }
-.th p{
-  text-align: left;
- 
-  padding: 20px;
-  font-size: 20px;
+.th p {
+  text-align: justify;
+  margin-left: 50px;
+  /* width: 90%; */
+  font-family: "Noto Sans Myanmar", sans-serif;
+  font-weight: 580;
+  font-size: 15px;
+  color: #272030;
 }
-.le{
-  filter: drop-shadow(1px 1px 20px  skyblue);
+.le {
+  margin-right: 20px;
+  filter: drop-shadow(1px 1px 20px cadetblue);
 }
-.ig{
-  width: 600px;
-  height: 300px;
+.ig {
+  width: 450px;
+  height: 350px;
+  margin-right: 50px;
   overflow: hidden;
-  filter: drop-shadow(1px 1px 20px red);
- 
+  filter: drop-shadow(1px 1px 20px #272030);
 }
-.pi{
+.pi {
   margin-left: 200px;
 }
-.t{
+.t {
   border-radius: 20px;
   width: 60%;
- justify-content: center;
- align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-body{
- background-color:black;
+
+.history-content {
+  color: #272030;
+  text-align: justify;
+  padding: 30px 20px;
+  font-family: "Noto Sans Myanmar", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  width: 1000px;
+  border: 1px solid #272030;
+  border-radius: 5px;
+  font-style: normal;
+  margin: 50px auto;
 }
