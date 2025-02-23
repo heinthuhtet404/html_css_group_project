@@ -1,127 +1,296 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    
-    /* background-color: #e9e6e6ce; */
-    background-color: #e3ebf2;
+  color: #272030;
+  background-color: #e3ebf2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.home {
+  /* color: black; */
+  /* background-image: url(images/archeryGirl.PNG); */
+  background-color: #e3ebf2;
+  background-size: cover;
+  height: 100vh;
+  color: #272030;
+}
+
+.box {
+  /* color: #272030; */
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #e3ebf2;
+  border-bottom: 1px solid #272030;
+  margin: 0px 0px 10px 0px;
+  height: 35px;
+  position: sticky;
+  top: 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.drop-btn {
+  list-style: none;
+  padding: 0px 20px;
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+  text-align: center;
+  transition: 1s;
+  background-color: #e3ebf2;
+  color: #272030;
+  border: none;
+  cursor: pointer;
+}
+
+/* ----------------------drop box------------------------------------ */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* z-index: -3; */
+}
+
+.dropdown-content a {
+  color: #272030;
+  padding: 10px 13px;
+  text-decoration: none;
+  background-color: white;
+  display: block;
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.dropdown-content a:hover {
+  background-color: #272030;
+  color: #e3ebf2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/* ------------------------------------------------------------ */
+
+.list {
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  font-family: "Cutive Mono", serif;
+  font-weight: 600;
+  font-style: normal;
+  height: 30px;
+}
+
+.home_btn {
+  border: none;
+  /* border: 1px solid black; */
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: #272030;
+
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 300;
+  font-size: 12px;
+  font-style: normal;
+  transition: 0.3s;
+  color: #e3ebf2;
+}
+
+.drop-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  /* border-bottom: 1px solid #272030; */
+}
+
+.home_btn:hover {
+  /* border-radius: 20px; */
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #e3ebf2;
+  opacity: 0.7;
+  color: #272030;
+  border: 1px solid #272030;
+}
+
+.logo {
+  font-family: "Jura", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.logo a p {
+  /* color: #e3ebf2; */
+  color: #272030;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.logo:hover {
+  transform: translateX(10px);
 }
 
 header {
-    background-image: url(chess2.jpg);
-    background-size: cover;
-    color: #635f5f;
-    padding: 20px;
-    text-align: center;
+  background-image: url(chess2.jpg);
+  background-size: cover;
+  color: #635f5f;
+  padding: 20px;
+  text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: #ede8e6f3;
-    text-decoration: none;
+  color: #ede8e6f3;
+  text-decoration: none;
 }
 
-
-.box{
-    /* background-color: #706c6c; */
-    display: flex;
-    margin: 20px 20px;
-    justify-content: space-around;
+.box1 {
+  /* background-color: #706c6c; */
+  display: flex;
+  margin: 20px 20px;
+  justify-content: space-around;
 }
 
 button {
-    background: #222;
-    color: #fff;
-    /* padding: 10px 20px; */
-    border: none;
-    cursor: pointer;
+  background: #222;
+  color: #fff;
+  /* padding: 10px 20px; */
+  border: none;
+  cursor: pointer;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background: #222;
-    color: #fff;
-    /* position: relative; */
-    /* bottom: 0; */
-    /* width: 100%; */
+  text-align: center;
+  padding: 10px;
+  background: #222;
+  color: #fff;
+  /* position: relative; */
+  /* bottom: 0; */
+  /* width: 100%; */
 }
 
 #History {
-    width: 40%;
-    /* margin: 0px; */
-    padding: 20px 30px;
-    font-family: "Noto Sans Myanmar", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 12px;
-    height: 500px;
-    background-color: #272030;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    color: #e3ebf2;
+  width: 40%;
+  /* margin: 0px; */
+  padding: 20px 30px;
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  /* height: 500px; */
+  background-color: #272030;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: #e3ebf2;
 }
 
 #about {
-    width: 40%;
-    /* margin: 10px; */
-    padding: 20px 30px;
-    font-family: "Noto Sans Myanmar", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 12px;
-    height: 500px;
-    background-color: #272030;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    color: #e3ebf2;
+  width: 40%;
+  /* margin: 10px; */
+  padding: 20px 30px;
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  height: 500px;
+  background-color: #272030;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: #e3ebf2;
 }
 
-#about img{
-    width: 200px;
-    height: 200px;
+#about img {
+  width: 200px;
+  height: 200px;
 }
 
 #events {
-    width: 40%;
-    /* margin: 10px; */
-    padding: 20px 30px;
-    font-family: "Noto Sans Myanmar", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 12px;
-    height: 500px;
-    background-color: #272030;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    color: #e3ebf2;
-
+  width: 40%;
+  /* margin: 10px; */
+  padding: 20px 30px;
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  height: 500px;
+  background-color: #272030;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: #e3ebf2;
 }
 
 #news {
-    width: 40%;
-    margin: 10px;
-    padding: 0 30px;
-    font-family: "Noto Sans Myanmar", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 13px;
+  width: 40%;
+  margin: 10px;
+  padding: 0 30px;
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
 }
 
-.box2{
-    display: flex;
-    margin: 20px 20px;
-    justify-content: space-around;
+.box2 {
+  display: flex;
+  margin: 20px 20px;
+  justify-content: space-around;
 }

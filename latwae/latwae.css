@@ -4,24 +4,49 @@
 }
 
 body {
-  /* height: 2000px; */
+  height: 2000px;
+  color: #272030;
   background-color: #e3ebf2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: "Permanent Marker", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 20vh;
+  margin-left: 20px;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }
 
 .home {
+  /* color: black; */
+  /* background-image: url(images/archeryGirl.PNG); */
   background-color: #e3ebf2;
   background-size: cover;
   height: 100vh;
+  color: #272030;
 }
 
 .box {
-  z-index: 2;
+  /* color: #272030; */
   backdrop-filter: blur(5px);
   display: flex;
   justify-content: space-between;
   text-align: center;
   align-items: center;
   padding: 10px 20px;
+  background-color: #e3ebf2;
   border-bottom: 1px solid #272030;
   margin: 0px 0px 10px 0px;
   height: 35px;
@@ -46,7 +71,7 @@ a:active {
   color: black;
 }
 
-li {
+.drop-btn {
   list-style: none;
   padding: 0px 20px;
   font-family: "Noto Sans Myanmar", serif;
@@ -55,8 +80,53 @@ li {
   font-size: 13px;
   text-align: center;
   transition: 1s;
-  /* color: #e3ebf2; */
+  background-color: #e3ebf2;
+  color: #272030;
+  border: none;
+  cursor: pointer;
 }
+
+/* ----------------------drop box------------------------------------ */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: -3;
+}
+
+.dropdown-content a {
+  color: #272030;
+  padding: 10px 13px;
+  text-decoration: none;
+  background-color: white;
+  display: block;
+  font-family: "Noto Sans Myanmar", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.dropdown-content a:hover {
+  background-color: #272030;
+  color: #e3ebf2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+/* ------------------------------------------------------------ */
 
 .list {
   margin-top: 10px;
@@ -68,12 +138,18 @@ li {
   height: 30px;
 }
 
+p {
+  font-weight: bold;
+  font-size: 30px;
+}
+
 .home_btn {
   border: none;
+  /* border: 1px solid black; */
   padding: 5px 20px;
   border-radius: 10px;
   background-color: #272030;
-  align-items: center;
+
   font-family: "Noto Sans Myanmar", serif;
   font-weight: 300;
   font-size: 12px;
@@ -82,13 +158,14 @@ li {
   color: #e3ebf2;
 }
 
-li:hover {
+.drop-btn:hover {
   cursor: pointer;
   opacity: 0.8;
-  border-bottom: 1px solid #272030;
+  /* border-bottom: 1px solid #272030; */
 }
 
 .home_btn:hover {
+  /* border-radius: 20px; */
   opacity: 0.8;
   cursor: pointer;
   transition: 0.3s;
@@ -108,9 +185,8 @@ li:hover {
 }
 
 .logo a p {
+  /* color: #e3ebf2; */
   color: #272030;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .logo:hover {
@@ -124,7 +200,7 @@ li:hover {
   font-size: 40px;
   font-style: normal;
   cursor: pointer;
-  animation: text-animation 5s ease-in-out infinite;
+  /* animation: text-animation 5s ease-in-out infinite; */
   color: #272030;
   /* padding-top: 10px; */
 }
@@ -267,6 +343,7 @@ p {
   background-size: 30%;
   height: 260px;
   text-align: left;
+  background-color: #e3ebf2;
 }
 @keyframes text-animation {
   0% {

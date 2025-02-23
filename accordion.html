@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Accordion with Simple, Elegant Image</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #e3ebf2;
+            color: #272030;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 90%;
+            max-width: 1200px;
+            gap: 30px;
+        }
+
+        .accordion {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .accordion-item {
+            background: white;
+            border-radius: 7px;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .accordion-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .accordion label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            color: #272030;
+            padding: 16px 20px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .accordion label:hover {
+            background: #f7f7f7;
+        }
+
+        .accordion label::after {
+            content: "▼"; /* Downward arrow */
+            font-size: 18px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
+            padding: 0 20px;
+            background: #f9fbfd;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        input[type="checkbox"]:checked + label::after {
+            transform: rotate(180deg); /* Rotates to ▲ when expanded */
+        }
+
+        input[type="checkbox"]:checked + label + .accordion-content {
+            max-height: 200px;
+            padding: 14px 20px;
+        }
+
+        /* Simple and Elegant Image Design */
+        .image {
+            width: 100%;
+            height: auto;
+            max-width: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+            /* border: 5px solid #fff; Creates a clean border around the image */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="accordion">
+            <div class="accordion-item">
+                <input type="checkbox" id="section1">
+                <label for="section1">Section 1</label>
+                <div class="accordion-content">
+                    <p>Content for section 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <input type="checkbox" id="section2">
+                <label for="section2">Section 2</label>
+                <div class="accordion-content">
+                    <p>Content for section 2. Integer placerat, justo nec egestas luctus, orci purus venenatis est.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <input type="checkbox" id="section3">
+                <label for="section3">Section 3</label>
+                <div class="accordion-content">
+                    <p>Content for section 3. Suspendisse tincidunt suscipit mi, non fringilla risus tempor ut.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <input type="checkbox" id="section4">
+                <label for="section4">Section 4</label>
+                <div class="accordion-content">
+                    <p>Content for section 4. Duis suscipit, libero at scelerisque tempus, augue erat faucibus orci.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <input type="checkbox" id="section5">
+                <label for="section5">Section 5</label>
+                <div class="accordion-content">
+                    <p>Content for section 5. Proin ac neque at magna tincidunt interdum non a nisl.</p>
+                </div>
+            </div>
+        </div>
+
+        <img class="image" src="chess/chess3.jpg" alt="Image Description">
+    </div>
+
+    <script>
+        // Close all checkboxes when one is opened
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                checkboxes.forEach(otherCheckbox => {
+                    if (otherCheckbox !== checkbox) {
+                        otherCheckbox.checked = false;
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
