@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Sport Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Jura', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #272030;
+      color: #e3ebf2;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 25px;
+      background-color: #e3ebf2;
+      color: #272030;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+    }
+
+    .navbar .logo {
+      font-size: 22px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .navbar .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar .nav-links a {
+      color: #272030;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .navbar .explore-btn {
+      padding: 8px 20px;
+      background-color: #3498db;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      border-radius: 25px;
+    }
+
+    .navbar .explore-btn:hover {
+      background-color: #2980b9;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(135deg, #8e44ad, #3498db);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      max-width: 700px;
+    }
+
+    .hero .btn {
+      padding: 15px 35px;
+      background-color: #e3ebf2;
+      color: #272030;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 50px;
+      transition: 0.3s ease;
+    }
+
+    .hero .btn:hover {
+      background-color: #3498db;
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    /* Team Section */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+
+    .team-member {
+      background-color: #e3ebf2;
+      color: #272030;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: translateY(-10px);
+    }
+
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* Individual Section */
+    .individual-grid {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .individual-card {
+      background-color: #3498db;
+      padding: 30px;
+      border-radius: 15px;
+      color: white;
+      text-align: center;
+      max-width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .individual-card:hover {
+      transform: translateY(-10px);
+    }
+
+    /* News Section */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .news-card {
+      background-color: #e3ebf2;
+      color: #272030;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: left;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .news-card h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .news-card p {
+      font-size: 16px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="logo">Sport</div>
+    <div class="nav-links">
+      <a href="#team">Team</a>
+      <a href="#individual">Individual</a>
+      <a href="#news">News</a>
+    </div>
+    <a href="#explore" class="explore-btn">Explore</a>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div>
+      <h1>Unleash Your Potential</h1>
+      <p>Join the future of sports and innovation. Connect, grow, and achieve greatness.</p>
+      <a href="#explore" class="btn">Get Started</a>
+    </div>
+  </div>
+
+  <!-- Team Section -->
+  <section id="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="team1.jpg" alt="Team Member">
+        <h3>John Doe</h3>
+        <p>Lead Developer</p>
+      </div>
+      <div class="team-member">
+        <img src="team2.jpg" alt="Team Member">
+        <h3>Jane Smith</h3>
+        <p>Designer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Individual Section -->
+  <section id="individual">
+    <h2>Individual Achievements</h2>
+    <div class="individual-grid">
+      <div class="individual-card">
+        <h3>Elite Runner</h3>
+        <p>Breaking records in marathon racing worldwide.</p>
+      </div>
+      <div class="individual-card">
+        <h3>Champion Swimmer</h3>
+        <p>Leading the way in professional swimming.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section id="news">
+    <h2>Latest News</h2>
+    <div class="news-grid">
+      <div class="news-card">
+        <h3>Sports Tech Revolution</h3>
+        <p>How technology is reshaping the sports industry.</p>
+      </div>
+      <div class="news-card">
+        <h3>New Training Techniques</h3>
+        <p>Learn the latest methods to enhance performance.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

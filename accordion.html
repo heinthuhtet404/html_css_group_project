@@ -4,6 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Accordion with Simple, Elegant Image</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Badeen+Display&family=Kumar+One&family=Lexend+Giga:wght@100..900&family=Orbitron:wght@400..900&family=Pacifico&family=Righteous&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Major+Mono+Display&family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Orbitron:wght@400..900&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Monomaniac+One&family=Orbitron:wght@400..900&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Faster+One&family=Inconsolata:wght@200..900&family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
     <style>
         * {
             margin: 0;
@@ -58,8 +104,9 @@
             background: #ffffff;
             color: #272030;
             padding: 16px 20px;
-            font-size: 18px;
-            font-weight: 600;
+            font-family: "Noto Sans Myanmar", serif;
+            font-size: 15px;
+            font-weight: bold;
             cursor: pointer;
             position: relative;
             transition: background 0.3s ease-in-out;
@@ -71,7 +118,7 @@
 
         .accordion label::after {
             content: "▼"; /* Downward arrow */
-            font-size: 18px;
+            font-size: 15px;
             transition: transform 0.3s ease-in-out;
         }
 
@@ -85,7 +132,8 @@
             transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
             padding: 0 20px;
             background: #f9fbfd;
-            font-size: 16px;
+            font-family: "Noto Sans Myanmar", serif;
+            font-size: 14px;
             line-height: 1.6;
         }
 
@@ -117,46 +165,46 @@
         <div class="accordion">
             <div class="accordion-item">
                 <input type="checkbox" id="section1">
-                <label for="section1">Section 1</label>
+                <label for="section1">ခြေလှမ်း</label>
                 <div class="accordion-content">
-                    <p>Content for section 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>လက်ဝှေ့ထိုးရာတွင် ခြေလှမ်းမှန်ကန်ခြင်းသည် အလွန်အရေးကြီးပါသည်။ ခြေလှမ်းကောင်းမွန်ခြင်းဖြင့် ကိုယ်ဟန်ထိန်းသိမ်းနိုင်ပြီး ရန်သူ့ထိုးချက်များကို ရှောင်ရှားနိုင်ကာ မိမိ၏ထိုးချက်များကို ထိရောက်စွာ ပေးနိုင်ပါသည်။</p>
                 </div>
             </div>
 
             <div class="accordion-item">
                 <input type="checkbox" id="section2">
-                <label for="section2">Section 2</label>
+                <label for="section2">လက်လှုပ်ရှားမှု</label>
                 <div class="accordion-content">
-                    <p>Content for section 2. Integer placerat, justo nec egestas luctus, orci purus venenatis est.</p>
+                    <p>လက်ဝှေ့ထိုးရာတွင် လက်များကို မြန်မြန်ဆန်ဆန် လှုပ်ရှားနိုင်ခြင်းသည် အရေးပါပါသည်။ လက်များကို မှန်ကန်စွာ လှုပ်ရှားခြင်းဖြင့် ရန်သူ့ကို ထိထိရောက်ရောက် ထိုးနှက်နိုင်ပြီး ကာကွယ်နိုင်ပါသည်။</p>
                 </div>
             </div>
 
             <div class="accordion-item">
                 <input type="checkbox" id="section3">
-                <label for="section3">Section 3</label>
+                <label for="section3">ကာကွယ်ခြင်း</label>
                 <div class="accordion-content">
-                    <p>Content for section 3. Suspendisse tincidunt suscipit mi, non fringilla risus tempor ut.</p>
+                    <p>လက်ဝှေ့ထိုးရာတွင် ကာကွယ်ခြင်းသည် အလွန်အရေးကြီးပါသည်။ ရန်သူ၏ထိုးချက်များကို ရှောင်ရှားခြင်း၊ လက်မောင်းဖြင့် ကာကွယ်ခြင်း၊ ခေါင်းလှုပ်ခြင်းစသည့် နည်းလမ်းများဖြင့် မိမိကိုယ်ကို ကာကွယ်နိုင်ပါသည်။</p>
                 </div>
             </div>
 
             <div class="accordion-item">
                 <input type="checkbox" id="section4">
-                <label for="section4">Section 4</label>
+                <label for="section4">စိတ်ဓာတ်</label>
                 <div class="accordion-content">
-                    <p>Content for section 4. Duis suscipit, libero at scelerisque tempus, augue erat faucibus orci.</p>
+                    <p>လက်ဝှေ့ထိုးရာတွင် စိတ်ဓာတ်ခိုင်မာခြင်းသည် အလွန်အရေးကြီးပါသည်။ ပြိုင်ပွဲအတွင်း စိတ်ဖိစီးမှုများ၊ ပင်ပန်းမှုများကို ခံနိုင်ရည်ရှိပြီး အာရုံစူးစိုက်မှုကောင်းမွန်ခြင်းဖြင့် အနိုင်ရရှိနိုင်ပါသည်။</p>
                 </div>
             </div>
 
-            <div class="accordion-item">
+            <!-- <div class="accordion-item">
                 <input type="checkbox" id="section5">
                 <label for="section5">Section 5</label>
                 <div class="accordion-content">
                     <p>Content for section 5. Proin ac neque at magna tincidunt interdum non a nisl.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
 
-        <img class="image" src="chess/chess3.jpg" alt="Image Description">
+        <img class="image" src="latwae/lat.png" alt="Image Description">
     </div>
 
     <script>
