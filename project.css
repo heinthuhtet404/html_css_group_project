@@ -17,6 +17,102 @@ h1 {
   font-size: 20vh;
   margin-left: 20px;
 }
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+footer {
+  font-family: "Jura", serif;
+  justify-content: space-around;
+
+  background-color: #272027;
+  color: #e3ebf2;
+  padding: 40px 0;
+  position: relative;
+  text-align: center;
+}
+
+footer .footer-top {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 30px;
+}
+
+footer .footer-top .column {
+  flex: 1;
+  max-width: 300px;
+}
+
+footer .footer-top .column h3 {
+  font-size: 18px;
+  color: #3498db;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+footer .footer-top .column ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-top .column ul li {
+  margin-bottom: 10px;
+}
+
+footer .footer-top .column ul li a {
+  color: #e3ebf2;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+footer .footer-top .column ul li a:hover {
+  color: #3498db;
+}
+
+.column p{
+  font-size: 15px;
+  font-weight: 500;
+  /* color: #e3ebf2; */
+}
+
+footer .footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  color: #272027;
+  /* font-size: 12px; */
+}
+
+.footer-bottom p{
+  color: #e3ebf2;
+  font-size: 13px;
+}
+
+footer .social-icons {
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+footer .social-icons a {
+  color: #e3ebf2;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #3498db;
+}
+
+.photo img {
+  width: 200px;
+}
 @keyframes appear {
   from {
     opacity: 0;
