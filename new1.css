@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #272030;
+    box-sizing: border-box;
+}
+
+h3 {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    color: black;
+    font-size: 50px;
+    animation: appear 1s linear;
+    margin: 10px auto 20px;
+    text-align: center;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+body {
+    height: 5000px;
+}
+
+.hero_page {
+    position: relative;
+}
+
+.hero_page img {
+    /* background-image: url(archeryGirl.PNG); */
+    width: 100%;
+    background-size: cover;
+    height: 40vh;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    filter: blur(1px);
+}
+
+.hero_page h1 {
+
+    font-family: "Noto Sans Myanmar", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    color: white;
+}
+
+.intro_page {
+    /* height: 100vh; */
+    background-color: #e3ebf2;
+    /* display: flex; */
+    padding: 100px 0px;
+
+}
+
+.intro_page_one {
+    display: flex;
+    align-items: center;
+}
+
+.intro_page_one img {
+    width: 300px;
+    height: 260px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.intro_page_one p {
+    margin: 0px 100px;
+    width: 800px;
+    font-family: "Noto Sans Myanmar", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.intro_page_two {
+    display: flex;
+    align-items: center;
+}
+
+.intro_page_two img {
+    width: 300px;
+    height: 260px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.intro_page_two p {
+    text-indent: 50px;
+    text-align: justify;
+    /* width: 700px; */
+    font-family: "Noto Sans Myanmar", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+    margin: 0px 100px 0px 200px;
+}
+
+.body_page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.body_page div {
+    /* border-image: fill 0 linear-gradient(rgb(255, 20, 20),#2399ff); */
+    width: 20%;
+    height: auto;
+    box-sizing: border-box;
+    height: 60vh;
+    transition: 0.5s;
+    position: relative;
+}
+
+.body_page div img {
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.body_page div .body_page_content {
+    position: absolute;
+}
+
+/* .body_page div .one:hover{
+    scale: 1.05;
+} */
+
+/* .body_page div .two:hover{
+    scale: 1.05;
+}
+
+.body_page div .three:hover{
+    scale: 1.05;
+}
+
+.body_page div .four:hover{
+    scale: 1.05;
+}
+
+.body_page div .five:hover{
+    scale: 1.05;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@5ee;6ee;78@&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    color: white;
+}
+
+body {
+    background: white;
+    width: 100%;
+    height: 100vh;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.card-group {
+    display: flex;
+    gap: 0px;
+    margin-top: 10px;
+}
+
+.card {
+    width: 100%;
+    height: 400px;
+
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card .layer {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card .info {
+    position: absolute;
+    bottom: -50%;
+    padding: 15px;
+    opacity: 0;
+
+    transition: 0.5s bottom, 1.75s opacity;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+}
+
+.info p {
+    font-size: 12px;
+    margin-top: 3px;
+    text-align: justify;
+    color: white;
+}
+
+.info a {
+    text-decoration: none;
+}
+
+.info button {
+    background: #490CCC;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+card:hover,
+.card:hover img,
+.card:hover layer {
+    transform: scale(1.1);
+}
+
+.card:hover>.layer {
+    opacity: 1;
+}
+
+.card:hover>.info {
+    bottom: 0;
+    opacity: 1;
+}
+
+.card-group:hover>.card:not(:hover) {
+    filter: blur(5px);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.popup a {
+    display: block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+#popup-box:target {
+    display: flex;
+    z-index: 2;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+    width: 500px;
+    height: 600px;
+    overflow: auto;
+
+
+}
+
+.popup-content img {
+    margin-left: 30px;
+    margin-top: 20px;
+    height: 600px;
+    width: 400px;
+
+}
+
+.imi {
+    height: 500px;
+    width: 400px;
+}
+
+.im {
+
+    height: 500px;
+    width: 400px;
+}
+
+.popupone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.popupone a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+#popup-boxone:target {
+    display: flex;
+    z-index: 2;
+}
+
+.popup-contentone {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+
+}
+
+.popuptwo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.popuptwo a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+#popup-boxtwo:target {
+    display: flex;
+    z-index: 2;
+}
+
+.popup-contenttwo {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+    width: 500px;
+    height: 300px;
+    overflow: auto;
+
+}
+
+.popupth {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.popupth a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+#popup-boxth:target {
+    display: flex;
+    z-index: 2;
+}
+
+.popup-contentth {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+    width: 500px;
+    height: 600px;
+    overflow: auto;
+    margin-left: 100px;
+
+
+}
+
+.popupfour {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.popupfour a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+#popup-boxfour:target {
+    display: flex;
+    z-index: 2;
+}
+
+.popup-contentfour {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+    width: 500px;
+    height: 500px;
+    overflow: auto;
+    margin-left: 100px;
+}
+
+p {
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.accordion {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.accordion-item {
+    background: white;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.accordion label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    color: #272030;
+    padding: 16px 20px;
+    font-family: "Noto Sans Myanmar", serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s ease-in-out;
+}
+
+.accordion label:hover {
+    background: #f7f7f7;
+}
+
+.accordion label::after {
+    content: "▼";
+    /* Downward arrow */
+    font-size: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0 20px;
+    background: #f9fbfd;
+    font-family: "Noto Sans Myanmar", serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+input[type="checkbox"]:checked+label::after {
+    transform: rotate(180deg);
+    /* Rotates to ▲ when expanded */
+}
+
+input[type="checkbox"]:checked+label+.accordion-content {
+    max-height: 200px;
+    padding: 14px 20px;
+}
+
+/* Simple and Elegant Image Design */
+.image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    /* border: 5px solid #fff; Creates a clean border around the image */
+}
