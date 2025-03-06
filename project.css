@@ -675,6 +675,7 @@ footer .social-icons a:hover {
   width: 100%;
   padding: 30px 0;
   background-color: #e3ebf2;
+  justify-content: space-around;
 
 }
 
@@ -698,12 +699,12 @@ footer .social-icons a:hover {
 }
 
 .register_image {
-  background-color: #272027;
+  /* background-color: #272027; */
   width: 35%;
 }
 
 .register_page {
-  width: 65%;
+  width: 50%;
   background-color: #e3ebf2;
 
 }
