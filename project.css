@@ -17,7 +17,6 @@ h1 {
   font-family: "Permanent Marker", serif;
   font-weight: 400;
   font-style: normal;
-
   font-size: 20vh;
   margin-left: 20px;
 }
@@ -447,9 +446,11 @@ h2 {
 .baby_pad {
   padding: 10px 15px;
 }
-.baby:hover{
+
+.baby:hover {
   transform: scale(1.09);
 }
+
 .baby_card_content {
   font-family: "Permanent Marker", serif;
   font-weight: 400;
